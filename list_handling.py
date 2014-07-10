@@ -28,5 +28,5 @@ def printList(list):
 # writes list into given file (appending)
 def writeToFile(filename, list):
    file = open(filename, "ab")
-   file.write(listToString(list))
+   file.write(listToString(list) + "\n")
    file.close()
