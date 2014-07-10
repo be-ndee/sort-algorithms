@@ -1,5 +1,5 @@
 # imports
-import ../list_handling
+import list_handling
 
 # insert sort algorithm
 def insert_sort(list):
