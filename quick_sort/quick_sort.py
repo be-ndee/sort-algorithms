@@ -5,7 +5,6 @@ def divide(r_int, l_int, list):
     i = l_int
     j = r_int - 1
     p = list[r_int]
-    print "Pivot: ", p
     while i < j:
         while list[i] <= p and i < r_int:
             i += 1
@@ -36,6 +35,3 @@ def quick_sort(l_int, r_int, list):
         d_int = divide(r_int, l_int, list)
         quick_sort(l_int, d_int - 1, list)
         quick_sort(d_int + 1, r_int, list)
-        t_int = list[l_int]
-        list[l_int] = list[r_int]
-        list[r_int] = list[t_int]
